@@ -16,14 +16,18 @@ A production-ready HTML email template using Shopify Liquid that dynamically pul
 - `{% for line_item in order.line_items %}` — loops through every product ordered
 - `{{ line_item.price | money }}` — currency formatting using the money filter
 - `{% if order.total_price > 5000000 %}` — conditional VIP message for orders over ₦50,000
+- **Live preview:** https://ijay-techwriter.github.io/kova-active-order-email/demo-version/
+
 
 ## Folder Structure
 kova-active-order-email/
 ├── broken-version/
-│   └── index.html                 # Original broken hardcoded email
+│   └── index.html        # Original broken hardcoded email
 ├── fixed-version/
-│   ├── index.html                 # Rebuilt HTML email with Liquid tags
-│   └── order-confirmation.liquid  # Liquid template file
+│   ├── index.html        # Rebuilt HTML with Liquid tags
+│   └── order-confirmation.liquid
+├── demo-version/
+│   └── index.html        # Static preview with dummy data
 ## Skills Demonstrated
 
 HTML email development · Liquid templating · Shopify email notifications · Conditional logic · Dynamic loops · Currency filters
